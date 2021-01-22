@@ -21,7 +21,7 @@ const fetchShipAddress = (state: CheckoutState): Address => {
   return (state.shipAddress ? state.shipAddress : state.shipAddress) as Address;
 };
 const fetchBillAddress = (state: CheckoutState): Address => {
-  return (state.billAddress ? state.billAddress : state.billAddress) as Address;
+  return (state.billAddress ? state.billAddress : '') as Address;
 };
 const fetchOrderState = (state: CheckoutState): string => state.orderState;
 const fetchShipTotal = (state: CheckoutState): number => state.shipTotal;
